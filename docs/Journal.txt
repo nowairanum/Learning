@@ -1,0 +1,44 @@
+3/15
+- Read the behavior section of Cracking the coding interview
+- Revisited the basics of C++ 
+- Worked on file management with C++ 
+
+3/16
+- Studied the STAR interview
+- Selected a couple of questions to answer using STAR method
+- New Features in C++ 14 and 17. (<any>, <optional> and <varitant>)
+- Different types of operators and their uses
+- Name 15 most important heder files and what are they used for?
+- What is the difference between auto and any?
+
+3/17
+- 
+- 10 most important things <algorithm> library does.
+- Find is the differnece between map and unordered map 
+- What are initializer lists, complex numbers, ternary operator "?" and ":"
+- Learn about Digital Signal Processing (DSP), 
+- JNI (Java Native Interface) 
+- Learned how does C++ compliation works and what are the different types of output files we obtain
+- Asdaq did a demonstation of how JNI program works. 
+- We did a C++ program using .exe, .dll and .lib files elobarating how files work. 
+
+3/18
+- Learned about recurssion and tree
+- Created a programs use recursion, tress, and JNI.
+- Understand the concepts of Digital Signal Processing (DSP), time domain, frequency domain, fourier transform, fast-forward fourier transform (FFT) and Inverse fourier transform (IFT).
+- Add a code of fourier transform from already coded program, to your own program.
+- Created a programs using JNI that passes integer arguments.
+
+3/19/2021
+- Read the following link:
+1.http://oberon00.github.io/cpptutorial/proc/hello-world.html
+2.https://ericlemes.com/2018/11/21/compiling-c-code/
+- Mathematical Calculation of fourier signal
+- How does Java work? How C to Java works? How C++ to Java works?
+- How does Python work? How C to Python works? How C++ to Python works?
+- What is managed memory, unmanaged memory and garbage collection? Which language uses which memory?
+- How are different data structure represented in different languages?
+- What files to ignore from git repository. How to ignore them.
+- Watch a tutorial on Git.
+- Asdaq taught me how to work on Git and learned how to use gitGUI and gitBash
+

@@ -1,0 +1,71 @@
+15 most important header files:
+Useful Functions:
+- <iostream>: std::cout
+- <iomanip>: std::setprecision()
+- <fstream>: streaming files like std::open(), std::close(), reading and writing
+- <random>: defines functions for random number generation such as std::random::rand(int,double)
+- <cmath>: defines constant like pi, defination of mathametical operations like pow(int,int)
+- <ctype>: (find out more, find sub in cpp): isalnum, isalpha, isupper, islower
+- <cstdint>: (find out more, find sub in cpp): int8_t, int16_t, int32_t
+- <functional>: defines std::function<void(int)>, lambdas?
+- <type_traits>: std::is_same<T,U>, std::is_arithmetic<T>, (look up the concept of SFINAE)
+- <utility>: std::compare, std::swap, std::exchange
+- <iterator>: input, output, bidirectional, random access iterator
+- <exception>: std::exception
+- <algorithm>: 
+ 1. std::find: finds the first element satisfying specific criteria (std::search: searches for a range of elements)
+ 2. std::transform: applies a function to a range of elements, storing results in a destination range
+ 3. std::remove_if: removes elements satisfying specific criteria
+ 4. std::accumulate: sums up a range of elements
+ 5. std::move: moves a range of elements to a new location
+ 6. std:: swap: swaps the values of two objects
+ 7. std::reverse: reverses the order of elements in a range
+ 8. std::merge: merges two sorted ranges
+ 9. std::set_difference: computes the difference between two sets
+10. std::sort: sorts a range into ascending order
+
+Useful Data Structures:
+- <tuple>: std::tuple<std::string, int, double> tuple_name = {"Nova", 1, 1.0};
+- <vector>: std::vector<int> vector_name = {1, 2, 3};
+- <string>: std::string string_name = "Hello World!";
+- <array>: std::array<int,3> array_name = {1,2,3};
+- <pair>: std::pair<std::string, std::any> pair_value = {"string_value", "hello"};
+- <map>: std::map<std::string, std::any> map_name = {{"double_value",1.0}, {"int_value",1}, pair_value};
+- <unordered_map>: std::unordered_map<std::string, std::any> map_name = {{"double_value",1.0}, {"int_value",1}, pair_value};
+- <complex>: std::complex<float> complex_float_value = {1.0, 0.0};
+- <set>: std::set<int> set_values = {1,2,3,4};
+- <memory>: std::unique_ptr<int>, std::shared_ptr<int>
+
+Operators:
+- Arithmetic: + - / % *
+- Assignment: = += -= *= /= %= <<= >>= &= ^= |=
+- Relational/Comparison: == != > < >= <=
+- Logical: &&, ||, !
+- Bitwise: & AND, | OR, ^ BINARY XOR, ~ BINARY ONE'S COMPLIMENT
+- Ternary: sizeof ? . , &
+- Shift: << left shift >> right shift >>> unsigned right shift
+- Unary: ++ increment -- decerment & address of * derefernce 
+- function: ()
+
+
+What outputs can you get from a compiled program in Windows?
+Ans: exe, lib, dll
+
+For running a program through command line, which output will you compile?
+Ans: exe
+
+For running a program through Java, which output file would you get after compilining the c++ program?
+Ans: dll  
+
+For intermediate projects, which output would you create to be used by the final output project (exe/dll):
+Ans: lib
+
+Project:
+Important Properties of a Project:
+- General::Output Directory
+- VC++ Directories::Include Directories
+- VC++ Directories::Library Directories
+- Linker::Input::Additional Dependencies
+
+Important Properties of a Solution:
+- Project Dependencies

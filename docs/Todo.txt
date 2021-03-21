@@ -1,0 +1,28 @@
+Task 3/20/2021
+- Input your day here ...
+- Homework:
+- Install Python 3.8
+- Read about pybind11
+- Read about swig
+- Implementation and testing of tree table from cpp to java and python 
+- Reuse Implementation and test from cpp to java and python 
+
+
+Task 3/21/2021:
+
+Create 3 projects
+- .exe project
+- .dll project
+- .lib project
+
+
+
+Build/Run the c/c++ project
+
+Create a project in Java
+- .jar project (which uses the .dll project from c/c++ and JNI)
+
+Build/Run the java project
+
+
+Task 3/22/2021:

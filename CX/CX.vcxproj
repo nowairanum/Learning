@@ -24,6 +24,7 @@
     <ProjectGuid>{c6d611bd-820d-4c65-8ee9-78680580171a}</ProjectGuid>
     <RootNamespace>dynamiclinkedlibrary</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>CX</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -73,22 +74,26 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)bin\$(Configuration)\$(PlatformTarget)</OutDir>
-    <IncludePath>$(SolutionDir)..\jdk-16\include\;$(SolutionDir)..\jdk-16\include\win32;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Python\Python39\include\;$(SolutionDir)extern\pybind11\include\;$(SolutionDir)..\jdk-16\include\;$(SolutionDir)..\jdk-16\include\win32;$(SolutionDir)Core;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Python\Python39\libs;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)bin\$(Configuration)\$(PlatformTarget)</OutDir>
-    <IncludePath>$(SolutionDir)..\jdk-16\include\;$(SolutionDir)..\jdk-16\include\win32;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Python\Python39\include\;$(SolutionDir)extern\pybind11\include\;$(SolutionDir)..\jdk-16\include\;$(SolutionDir)..\jdk-16\include\win32;$(SolutionDir)Core;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Python\Python39\libs;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)bin\$(Configuration)\$(PlatformTarget)</OutDir>
-    <IncludePath>$(SolutionDir)..\jdk-16\include\;$(SolutionDir)..\jdk-16\include\win32;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Python\Python39\include\;$(SolutionDir)extern\pybind11\include\;$(SolutionDir)..\jdk-16\include\;$(SolutionDir)..\jdk-16\include\win32;$(SolutionDir)Core;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Python\Python39\libs;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)bin\$(Configuration)\$(PlatformTarget)</OutDir>
-    <IncludePath>$(SolutionDir)..\jdk-16\include\;$(SolutionDir)..\jdk-16\include\win32;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Python\Python39\include\;$(SolutionDir)extern\pybind11\include\;$(SolutionDir)..\jdk-16\include\;$(SolutionDir)..\jdk-16\include\win32;$(SolutionDir)Core;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Python\Python39\libs;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -159,11 +164,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="HelloJNI.h" />
+    <ClInclude Include="cxJNI.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="cxPython.cpp" />
     <ClCompile Include="dllmain.cpp" />
-    <ClCompile Include="HelloJNI.c" />
+    <ClCompile Include="cxJNI.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

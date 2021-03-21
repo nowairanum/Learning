@@ -1,8 +1,9 @@
 // executable.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
-#include "static_library.h"
+#include "Fraction.h"
 #include "Tree.h"
+#include "Pet.h"
 #include <any>
 #include <complex>
 #include <utility>
@@ -11,10 +12,12 @@ using namespace Asdaq_Nova;
 
 int main()
 {
-    // Call functions from class Brain_Of_Program
-    /*Brain_Of_Program brain_of_program = Brain_Of_Program();
-    std::cout << brain_of_program << std::endl;
-    brain_of_program();*/
+    // Call functions from class Pet
+    auto pluto = Pet("Pluto", 5);
+    pluto.info();
+    std::cout << "Going for a walk ..." << std::endl;
+    pluto.go_for_a_walk();
+    pluto.info();
 
     // Call function from class Tree
     node* root = newNode(1);
@@ -23,6 +26,6 @@ int main()
     root->left->left = newNode(4);
     root->left->right = newNode(5);
 
-    std::cout << "Size of the tree is " << size(root);
+    //std::cout << "Size of the tree is " << size(root);
 }
 

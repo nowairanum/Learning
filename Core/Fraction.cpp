@@ -1,13 +1,9 @@
 // static_library.cpp : Defines the functions for the static library.
 //
 
-#include "static_library.h"
+#include "Fraction.h"
 
 namespace Asdaq_Nova {
-	void Brain_Of_Program::operator() () {
-		std::cout << "Asdaq_Nova rocking!" << std::endl;
-	}
-
 	int Fraction::gcd(int a, int b) { 
 		return b == 0 ? a : gcd(b, a % b); 
 	}

@@ -2,15 +2,6 @@
 #include <iostream>
 
 namespace Asdaq_Nova {
-	struct Brain_Of_Program {
-		void operator() ();
-	};
-
-    inline std::ostream& operator<<(std::ostream& out, const Brain_Of_Program& f)
-    {
-        return out << "Brain_Of_Program";
-    }
-
     class Fraction
     {
         int gcd(int a, int b);

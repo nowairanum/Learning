@@ -12,3 +12,5 @@ public:
 node* newNode(int data);
 
 int size(node* node);
+
+void count_tree();

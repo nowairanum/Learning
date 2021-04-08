@@ -10,11 +10,9 @@ node* newNode(int data)
     Node->data = data;
     Node->left = NULL;
     Node->right = NULL;
-
     return(Node);
 }
 
-/* Computes the number of nodes in a tree. */
 int size(node* node)
 {
     if (node == NULL)
@@ -23,3 +21,12 @@ int size(node* node)
         return(size(node->left) + 1 + size(node->right));
 }
 
+void count_tree() {
+    node* root = newNode(1);
+    root->left = newNode(2);
+    root->right = newNode(3);
+    root->left->left = newNode(4);
+    root->left->right = newNode(5);
+    int x = size(root);
+    std::cout << std::endl << "Size of the tree is " << x;
+}

@@ -2,6 +2,7 @@
 
 #include <pybind11/pybind11.h>
 #include "Pet.h"
+#include "Tree.h"
 
 namespace py = pybind11;
 
@@ -16,4 +17,19 @@ PYBIND11_MODULE(CX, m) {
         .def("get_hunger", &Pet::get_hunger)
         .def("get_name", &Pet::get_name)
         .def("info", &Pet::info);
+
+    py::class_<node>(m, "node")
+        .def(py::init<int>())
+        .def("newNode", newNode)
+        .def("size", size)
+        .def("count_tree", count_tree);
+
+ /*   py::class_<Fraction>(m, "Fraction")
+        .def(py::init<int>())
+        .def("gcd", gcd)
+        .def("Fraction", Fraction)
+        .def("num", num)
+        .def("den", den)
+        .def("operator*", operator*)
+        .def("print_on", print_on);*/
 }

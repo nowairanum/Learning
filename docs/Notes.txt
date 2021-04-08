@@ -60,6 +60,9 @@ Ans: dll
 For intermediate projects, which output would you create to be used by the final output project (exe/dll):
 Ans: lib
 
+Declaration : header file (int max(int num1, int num2);)
+Definaton: Cpp file (Implementation of Code)
+
 Project:
 Important Properties of a Project:
 - General::Output Directory

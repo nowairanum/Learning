@@ -1,16 +1,16 @@
 #pragma once
 #include <iostream>
 
-namespace Asdaq_Nova {
     class Fraction
     {
-        int gcd(int a, int b);
+        int gcd(int a = 1, int b = 1);
         int n, d;
     public:
-        Fraction(int n, int d = 1);
+        Fraction(int n = 1, int d = 1);
         int num() const;
         int den() const;
         Fraction& operator*=(const Fraction& rhs);
+        void print_on();
     };
 
     inline std::ostream& operator<<(std::ostream& out, const Fraction& f)
@@ -29,4 +29,3 @@ namespace Asdaq_Nova {
     {
         return lhs *= rhs;
     }
-}

@@ -3,9 +3,8 @@
 
 #include "Fraction.h"
 
-namespace Asdaq_Nova {
 	int Fraction::gcd(int a, int b) { 
-		return b == 0 ? a : gcd(b, a % b); 
+		return b == 0 ? a : gcd(b, a % b);
 	}
 
 	Fraction::Fraction(int n, int d) : n(n / gcd(n, d)), d(d / gcd(n, d)) { }
@@ -26,5 +25,8 @@ namespace Asdaq_Nova {
 		return *this;
 	}
 
-
-}
+	void Fraction::print_on()
+	{
+		std::cout << n << "/" << d << std::endl;
+		std::cout << *this << std::endl;
+	}

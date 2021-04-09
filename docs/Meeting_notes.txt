@@ -1,0 +1,16 @@
+(04/08/2021)
+What am I trying to do?
+
+I am trying to accomplish two tasks in the next two weeks:
+  First task: use alglib api to compute fft of a time domain vector
+  - Looking at alglib api i have found the fft function whose signature is void fftc1d(complex_1d_array &a)
+  - fftc1d takes a char array of time domain data and computes fft in place of the input time domain vector
+  - For the input of the fftc1d function, read a text file (*csv) containing time domain data and input it in the fftc1d function
+     - There are two ways to generate data: 
+	1. Manual entry of data
+	2. Testable data such as a sine wave at a specific frequency  
+	   - From the internet get a sine sample data
+           - Find a function that generates a sine wave data
+  - Write the output of the fftc1d function (frequency domain data) in a text file (*csv)
+
+ Second task: create a cpp dll and expose it's api to java

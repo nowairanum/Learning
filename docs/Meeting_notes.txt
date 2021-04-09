@@ -1,4 +1,10 @@
 (04/08/2021)
+1. create power point presentations for two projects:
+   - project statemenet
+   - flow chart
+   - input data  what it is and where it came from 
+   - output data
+2. Fix the four doucments 
 What am I trying to do?
 
 I am trying to accomplish two tasks in the next two weeks:
@@ -13,9 +19,26 @@ I am trying to accomplish two tasks in the next two weeks:
            - Find a function that generates a sine wave data
   - Write the output of the fftc1d function (frequency domain data) in a text file (*csv)
 
- Second task: create a CPP .dll and expose its API to java
- - I begin by creating a DLL file and then make a .cpp file that has the code to be exposed to Jave
+ Second Task: Create a CPP .dll and expose its API to Java
+ - I begin by creating a DLL file and then make a .cpp file that has the code to be exposed to Java
  - Then I create a header file that holds the JNI implementation  
  - Through .dll properties from VC++ Directories I added Java directories by giving the path in Include directories
  - I created a java project file and added my JNI code.
  - In the last step I include the path of the native library (which is the DLL file) location through the Java build path
+
+
+
+(04/09/2020)
+	 - Rename files with _ instead of spaces in the name  
+ - Redo presentation with different approaches
+ - Redo meeting file text for project 2
+	- Identify what you know and what you dont know (using understand and don't understand)
+	- Save images with naming such as kalb_cppcon_inheritance
+ 	- Ensure everything is aligned and proof read
+ 	- Put all the notes together under one file notes.txt, 
+ 	- ensure the notes are all organized
+ 	- Remove three files: Object orientented programming, functional templates and exceptions
+	- Proof read the journal and if needed organize it better
+ 	- Install TortoiseGit 
+ - Find out how to retrieve previous todo list from git, copy the content into meeting notes and then delete the to-do list.
+

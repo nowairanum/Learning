@@ -1,7 +1,11 @@
 To do list: 
 
 04/08/2021
-1. create power point presentations for two projects
+1. create power point presentations for two projects:
+   - project statemenet
+   - flow chart
+   - input data  what it is and where it came from 
+   - output data
 2. Fix the four doucments 
 
 

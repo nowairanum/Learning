@@ -13,4 +13,9 @@ I am trying to accomplish two tasks in the next two weeks:
            - Find a function that generates a sine wave data
   - Write the output of the fftc1d function (frequency domain data) in a text file (*csv)
 
- Second task: create a cpp dll and expose it's api to java
+ Second task: create a CPP .dll and expose its API to java
+ - I begin by creating a DLL file and then make a .cpp file that has the code to be exposed to Jave
+ - Then I create a header file that holds the JNI implementation  
+ - Through .dll properties from VC++ Directories I added Java directories by giving the path in Include directories
+ - I created a java project file and added my JNI code.
+ - In the last step I include the path of the native library (which is the DLL file) location through the Java build path

@@ -1,9 +1,9 @@
-3/15/2021
+# 3/15/2021
 - Read the behavior section of Cracking the coding interview
 - Revisited the basics of C++ 
 - Worked on file management with C++ 
 
-3/16/2021
+# 3/16/2021
 - Studied the STAR interview
 - Selected a couple of questions to answer using the STAR method
 - New Features in C++ 14 and 17. (<any>, <optional> and <varitant>)
@@ -11,7 +11,7 @@
 - Named 15 most important header files and what are they used for?
 - Worked on the difference between auto and any?
 
-3/17/2021
+# 3/17/2021
 - 10 most important things <algorithm> library does.
 - What are initializer lists, complex numbers, ternary operator "?" and ":"
 - Learn the concept of JNI (Java Native Interface) 
@@ -27,7 +27,7 @@ Inverse Fourier transform (IFT).
 - Add a code of Fourier transform from an already coded program to your program. (Program did not work)
 - Created a program using JNI that passes integer arguments using c language.
 
-3/19/2021
+#3/19/2021
 - Read the following link:
 1.http://oberon00.github.io/cpptutorial/proc/hello-world.html
 2.https://ericlemes.com/2018/11/21/compiling-c-code/
@@ -39,7 +39,7 @@ Inverse Fourier transform (IFT).
 - Watch a tutorial on Git.
 - Asdaq taught me how to work on Git and learned how to use gitGUI and gitBash
 
-3/20/2021
+#3/20/2021
 - Installed Swig, Pybind11, and CMake 
 - Read about pybind11 and how it works with python
 - Read about swig and how it works with python

@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tester", "Tester\Tester.vcx
 		{ACDCCF22-FFC0-4926-908A-9C185A326105} = {ACDCCF22-FFC0-4926-908A-9C185A326105}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "algolib", "algolib\algolib.vcxproj", "{B08388B3-9D04-4D94-B6DD-7881F9119B28}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -47,6 +49,14 @@ Global
 		{F3C47A58-E93B-4B6D-90F9-DBA16B34FCA9}.Release|x64.Build.0 = Release|x64
 		{F3C47A58-E93B-4B6D-90F9-DBA16B34FCA9}.Release|x86.ActiveCfg = Release|Win32
 		{F3C47A58-E93B-4B6D-90F9-DBA16B34FCA9}.Release|x86.Build.0 = Release|Win32
+		{B08388B3-9D04-4D94-B6DD-7881F9119B28}.Debug|x64.ActiveCfg = Debug|x64
+		{B08388B3-9D04-4D94-B6DD-7881F9119B28}.Debug|x64.Build.0 = Debug|x64
+		{B08388B3-9D04-4D94-B6DD-7881F9119B28}.Debug|x86.ActiveCfg = Debug|Win32
+		{B08388B3-9D04-4D94-B6DD-7881F9119B28}.Debug|x86.Build.0 = Debug|Win32
+		{B08388B3-9D04-4D94-B6DD-7881F9119B28}.Release|x64.ActiveCfg = Release|x64
+		{B08388B3-9D04-4D94-B6DD-7881F9119B28}.Release|x64.Build.0 = Release|x64
+		{B08388B3-9D04-4D94-B6DD-7881F9119B28}.Release|x86.ActiveCfg = Release|Win32
+		{B08388B3-9D04-4D94-B6DD-7881F9119B28}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

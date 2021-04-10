@@ -317,7 +317,9 @@ Note Both the casting need error code.
    11. Timer 30:17 - why is the asset not forcing the value of 1?
    12. Timer 36:53 - The innermost scope has already define foo(int) so why did it give false? Why is the int foo hidden? 
    13. Slide at timer 40:52 Cannot understand the code written
-
+   14. What does “a dereferenced null pointer value of a polymorphic type” mean
+   15. https://www.geeksforgeeks.org/pure-virtual-functions-and-abstract-classes/
+   16. Operator overload questions
 
 							Function and Class Template
 								By Dan Saks
@@ -805,7 +807,13 @@ Example:
 	i. std::overflow_error: This is thrown if a mathematical overflow occurs. It can be used to report arithmetic overflow errors (that is, situations where a result of a computation is too large for the destination type)
        ii. std::range_error: This occurs when you try to store a value that is out of range. It can be used to report range errors (that is, situations where a result of a computation cannot be represented by the destination type).
       iii. std::underflow_error: This is thrown if a mathematical underflow occurs. It may be used to report arithmetic underflow errors (that is, situations where the result of a computation is a subnormal floating-point value)
-
+ Questions:
+1.  std::bad_cast: This can be thrown by dynamic_cast to a reference type fails the run-time check (e.g. because the types are not related by inheritance), 
+    and also from std::use_facet if the requested facet does not exist in the locale.
+i.  If std::exception_ptr stores a copy of the caught exception and if the copy constructor of the exception object caught by std::current_exception 
+    throws an exception, the captured exception is an instance of std::bad_exception.
+ii. If a dynamic exception specification is violated and std::unexpected throws or rethrows an exception that still violates the exception specification, 
+    but the exception specification allows std::bad_exception, std::bad_exception is thrown.
 
 						   Other Notes
  - 15 most important header files:

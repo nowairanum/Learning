@@ -1,3 +1,17 @@
+
+(03/25/2021)
+ - How to create Submodules in Git?
+ - Understand Mathematical Calculation of fourier signal and solve a question
+ - Reuse implementation and test from cpp to java and python 
+ - Understand and be ready to teach the following topics: 
+	 i. Smart C++ pointers and Raw C pointers, What are pros/cons for each? What are use cases for each?
+	 ii. Sorting, 4 different methods, what's the time complexity and space complexity for each of them
+	 iii. Implement a Linkedlist, along with basic functions, also implement a basic sorting algorithm (maybe bubble sort, easy) for it. 
+	 iv. Searching, 4 different methods, what's the time complexity and space complexity for each of them
+	 v. Implement a Tree, along with basic functions, also implement a basic searching algorthim (maybe dfs/bfs) for it.
+	
+
+
 (04/08/2021)
 1. create PowerPoint presentations for two projects:
    - project statement

@@ -207,7 +207,7 @@ Best Practices: (understand)
  - Make non-leaf class abstract (has at least one pure virtual function).
 
 ### Scenario: 
-![Image of Inheritance](Images\Kalb_CppCon_InheritanceProblem.jpeg)
+![](Images/Kalb_CppCon_InheritanceProblem.jpeg)
 ##### Explanation:
  - D3 is exactly like D2 with one little difference. So hence D3 and D2 are quite similar.
  - This is not a good practice for the following reasons:

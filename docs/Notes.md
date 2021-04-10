@@ -206,7 +206,9 @@ Best Practices: (understand)
  - Do not reuse your base class code, but instead write a derived class code that can be reused. 
  - Make non-leaf class abstract (has at least one pure virtual function).
 
-Scenario: (Further explained in Kalb_CppCon_InheritanceProblem.jpeg)
+### Scenario: 
+![Image of Inheritance](Images\Kalb_CppCon_InheritanceProblem.jpeg)
+##### Explanation:
  - D3 is exactly like D2 with one little difference. So hence D3 and D2 are quite similar.
  - This is not a good practice for the following reasons:
  - By deriving D3 from D2 now D2 will have new requirements on itself. Hence resulting in the implementation of divergence. 

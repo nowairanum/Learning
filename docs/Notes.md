@@ -256,7 +256,7 @@ Note: you either instantiate it or you derive from it, you never do both from th
 
 ### Use the non-virtual interface (NVI) idiom:(do not understand)
  - Consider making virtual functions nonpublic, and public functions nonvirtual.</br>
-	Virtual function ------------------> Non public (private)
+	Virtual function ------------------> Non public (private)</br>
 	Non Virtual functions -------------> Public 
 
 ### Base Class in control:(do not understand)

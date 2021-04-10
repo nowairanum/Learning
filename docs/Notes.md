@@ -255,7 +255,7 @@ By implementing this solution you get better hierarchies.
 Note: you either instantiate it or you derive from it, you never do both from the same class. (understand)
 
 ### Use the non-virtual interface (NVI) idiom:(do not understand)
- - Consider making virtual functions nonpublic, and public functions nonvirtual.
+ - Consider making virtual functions nonpublic, and public functions nonvirtual.</br>
 	Virtual function ------------------> Non public (private)
 	Non Virtual functions -------------> Public 
 

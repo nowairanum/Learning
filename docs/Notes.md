@@ -85,7 +85,7 @@ Syntax:
  - There derived class typically inherits and builds upon some or all of the data and function members of the base class
 
 ### Multi inheritance: 
-	Class derived_class : public base_class1, public base_Class2 {
+	class derived_class : public base_class1, public base_Class2 {
 	  //syntax of multiple inheritence
 	}
 
@@ -96,7 +96,7 @@ Syntax:
  - A class that is being created and is based upon the base class is sometimes called the subclass, child class, or leaf class.</br>
 - Syntax:
 ```
-	Class Derived_class:Public Base_Class {
+	class Derived_class:Public Base_Class {
 	  //code;
 	}
 ```
@@ -113,7 +113,7 @@ Syntax:
 	- Friend classes do not have to be a derived class, they can be any classes that have access to all the private data of a class.
 	- Syntax: 
 	```
-	Class abc {
+	class abc {
 	  String _name;
 	  Animal();
 	  Friend class xyz;
@@ -209,14 +209,14 @@ Note: Not all derived types are subtypes.(do not understand)
    a part of the vehicle class. This model is a "has-a" model that states a vehicle has an engine. One class is composed inside another one.</br>
 Syntax:
 ```
-	Class vehicle{
+	class vehicle{
 	  Engine e;
 	};
 ```
  - Inheritance uses is a model that states that function members of a base class will be used by the derived class such that if the vehicle is the base 
    class and car a derived class. A car is a vehicle. 
 Syntax:
-	Class car: public vehicle {
+	class car: public vehicle {
 	};
 
 Note: Powerful hierarchy is built on well-defined abstraction. (do not understand)
@@ -452,9 +452,9 @@ Syntax:
 ### Container Class Templates:
  - A container class is an object that holds other objects example arrays, linked lists, etc.
  - STL provides various container class templates, where T is a type parameter representing the type in the containers including:
-     1. List<T> - a double linked list of T objects
-     2. Vector<T> - a variable-length array of T objects
-     3. Set<T> - an ordered set of T objects
+     1. List&lt;T&gt; - a double linked list of T objects
+     2. Vector&lt;T&gt; - a variable-length array of T objects
+     3. Set&lt;T&gt; - an ordered set of T objects
 
 Note: Template isntatiation can be passed as template argument: 
 ```
@@ -479,17 +479,17 @@ Inline Rational <T> :: rational (T n): num {n}, den {1} { }
 //first rational is class name and second is member name
 ```
 ### Inside the scope:
- - Inside the scope of the class definition, you can use the word rational or rational<T>. Optional only inside the scope. 
+ - Inside the scope of the class definition, you can use the word rational or rational&lt;T&gt;. Optional only inside the scope. 
  - Both of them are equivalent (a member function of a class is a template)</br>
-	Where<T> is ignored:</br>
+	Where&lt;T&gt; is ignored:</br>
 	Rational ( );</br>
 	Rational (T n);</br>
 	Rational (T n, T d);</br>
 	   OR</br>
-	Where <T> is present:</br>
-	Rational <T>( );</br>
-	Rational <T>(T n);</br>
-	Rational <T>(T n, T d);
+	Where &lt;T&gt; is present:</br>
+	Rational &lt;T&gt;( );</br>
+	Rational &lt;T&gt;(T n);</br>
+	Rational &lt;T&gt;(T n, T d);
 ### Outside the scope:
  - Member function definition outside the scope is preceded by the class name and scope resolution operator
 	```
@@ -497,9 +497,9 @@ Inline Rational <T> :: rational (T n): num {n}, den {1} { }
 	Rational <T> 
 	Rational <T> : : operator += (rational const &ro){ }
 	```
- - <T> mandatory outside the class template scope
+ - &lt;T&gt; mandatory outside the class template scope
  - : : reenter the scope of class 
- - If you add <T> to the second rational after brackets that means <T> is explicitly specified. 
+ - If you add &lt;T&gt; to the second rational after brackets that means &lt;T&gt; is explicitly specified. 
 
 ### Constructors and Destructors:
  - When writing constructors and destructors, you are not allowed to put<T>.
@@ -518,7 +518,7 @@ Inline Rational <T> :: rational (T n): num {n}, den {1} { }
 	Template <typename T>
 	Rational <T> : : ~ rational ( ) { } //Rational <T> : : ~ rational <T> ( ) { } this syntax is not allowed 
 
-Note: write C<T> as just C everywhere inside the scope of a class template <T> and after the scope resolution operator does not put <T>.
+Note: write C&lt;T&gt; as just C everywhere inside the scope of a class template &lt;T&gt; and after the scope resolution operator does not put &lt;T&gt;.
 
 ### Inline functions: 
  - Keyword inline when used with a function, the compiler will place the code that functions in place of the function call. Hence the compiler makes the declaration, the definition.
@@ -534,7 +534,7 @@ Note: write C<T> as just C everywhere inside the scope of a class template <T> a
 ### Static Member function in C++:
 Syntax:
 ```
-	Class Myclass{
+	class Myclass{
 	  Public:
 	  Int x;
 	  Static int count; //declared inside a class
@@ -565,7 +565,7 @@ Static Data Member in Templates:
    Method 1: Prior to C++ 17
 	```
 	Template <type name T>
-	Class gadget {
+	class gadget {
 	  Static unsigned long counter; //declaration
 	}
 	Template <typename T>
@@ -574,14 +574,14 @@ Static Data Member in Templates:
    Method 2: C++ 17 feature
 	```
 	Template<typename T>
-	Class gadget{
+	class gadget{
 	  Inline static unsigned long counter = 0; //declaration and deifnation
 	};
 	```
 
 ### Static constant data memeber (a feature of C++ 11):
 	Template<typename T>
-	Class gadget {
+	class gadget {
 	  Static int const threshold = 37;
 	};
 
@@ -590,22 +590,22 @@ A class template can have members that are types: </br>
 Method 1: Outside the class
 ```
 Template<typename T>
-Class list {
+class list {
   Public:
-  Class iterator; //type member declaration. A nested member called iterator for containers like vectors and lists. 
+  class iterator; //type member declaration. A nested member called iterator for containers like vectors and lists. 
   //rest of the code
 };
 Template<typename T> //memeber type defination
-Class list <T>:: iterator {
+class list <T>:: iterator {
   //code
 };
 ```
 Method 2: Inside the class
 ```
 	Template<typename T>
-	Class list {
+	class list {
 	  Public:
-	  Class iterator { //member type defination}; 
+	  class iterator { //member type defination}; 
 	};
 ```
  - Use your class iterator outside the scope of the list class by its, “fully-qualified name”.
@@ -770,7 +770,7 @@ Max <char const *> (char const *a, char const * b) //This declaration is valid o
  - By default, the compiler instantiates class template implicitly
  - However, you can explicitly instantiate a class template using a declaration of the form:
  - Extern opt template declaration </br> Example: Template class rational<unsigned long>;
- - This explicitly instantiates rational <T> for type “unsigned long”
+ - This explicitly instantiates rational &lt;T&gt; for type “unsigned long”
 
 ### Implicit Instantiation:
  - Implicitly instantiating a class template specialization doesn’t necessarily instantiate all the members of the class

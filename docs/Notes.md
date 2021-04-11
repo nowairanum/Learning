@@ -152,7 +152,7 @@ Syntax:
 		cout<<"This function combines base and derived function";
 	} 
 ```
-This statement creates a derived class memeber function which is overlaoded in the derived class and has a defination in base class
+This statement creates a derived class member function that is overloaded in the derived class and has a definition in the base class
 
 ### Overloaded members:
  - They are used for changing or customizing certain behaviors of the member function of the base class
@@ -335,6 +335,7 @@ virtual  ~Logger ( ) = default; why not ~Logger ( );
 8. Timer 17:30 - he calls size of as illogical as its gonna to tell us how is the animal not that how big is the lizard but..the animal is pointing to the lizard so logical it should give the size of lizard.
 9. Timer 22:23 - assignment operators protected, I thought it was so that no one can directly access the data member but instead he says, “to prevent assignment from pointer to object.” Unable to understand.
 10. Timer 23:57 - they say make virtual function nonpublic but how would the compile override it if they are not public?
+(04/11/2021)
 11. Timer 30:17 - why is the asset not forcing the value of 1?
 12. Timer 36:53 - The innermost scope has already define foo(int) so why did it give false? Why is the int foo hidden? 
 13. Slide at timer 40:52 Cannot understand the code written
@@ -456,7 +457,7 @@ Syntax:
      2. Vector&lt;T&gt; - a variable-length array of T objects
      3. Set&lt;T&gt; - an ordered set of T objects
 
-Note: Template isntatiation can be passed as template argument: 
+Note: Template instantiation can be passed as template argument: 
 ```
 list <rational<int>> ratios;
 ```
